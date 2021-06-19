@@ -11,8 +11,8 @@ os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '0' #zezwalamy na polaczenie w lokal
 #srodowisku bez https
 
 github_blueprint = make_github_blueprint(
-    client_id="061455c87c668f8d2a92", #tu wklek swoj wygenerowany id z github
-    client_secret="868719a58866e5bad814350c8c42875526b7447f",#tu wklej swoj
+    client_id="5297f30e8a75357e7671", #tu wklek swoj wygenerowany id z github
+    client_secret="110ad2a978014592cc11ef2e7f22b3c1ce67d3bf",#tu wklej swoj
 #wygenerowany client secret z github
 )
 

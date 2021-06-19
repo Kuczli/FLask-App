@@ -1,0 +1,265 @@
+{% extends "base.html" %}
+<link href="{{ url_for('static', filename='css/gallery_css.css') }}" rel="stylesheet" type="text/css">
+{% block title %}Home{% endblock %}
+<script src="{{ url_for('static', filename='css/sc.js') }}"></script>
+{% set active_page = "index" -%}
+
+{% block body %}
+
+<div class="container my-4">
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4">
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body mb-0 p-0">
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a><img class="img-fluid z-depth-1" src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="video"
+        data-toggle="modal" data-target="#modal1"></a>
+  </div>
+  <div class="col-lg-4 col-md-12 mb-4">
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body mb-0 p-0">
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a><img class="img-fluid z-depth-1" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80" alt="video"
+        data-toggle="modal" data-target="#modal2"></a>
+  </div>
+  <div class="col-lg-4 col-md-12 mb-4">
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body mb-0 p-0">
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a><img class="img-fluid z-depth-1" src="https://images.unsplash.com/photo-1564865878688-9a244444042a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="video"
+        data-toggle="modal" data-target="#modal3"></a>
+  </div>
+  <div class="col-lg-4 col-md-12 mb-4">
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body mb-0 p-0">
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a><img class="img-fluid z-depth-1" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="video"
+        data-toggle="modal" data-target="#modal4"></a>
+  </div>
+  <div class="col-lg-4 col-md-6 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1066&q=80" alt="video"
+        data-toggle="modal" data-target="#modal6"></a>
+
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-lg-4 col-md-6 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1066&q=80"
+                allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="video"
+        data-toggle="modal" data-target="#modal4"></a>
+
+  </div>
+  <!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+
+<!-- Grid row -->
+<div class="row">
+
+  <!-- Grid column -->
+  <div class="col-lg-4 col-md-12 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80"
+                allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="https://images.unsplash.com/photo-1546900703-cf06143d1239?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1291&q=80" alt="video"
+        data-toggle="modal" data-target="#modal2"></a>
+
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-lg-4 col-md-6 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="https://images.unsplash.com/photo-1546900703-cf06143d1239?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1291&q=80"
+                allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80" alt="video"
+        data-toggle="modal" data-target="#modal5"></a>
+
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-lg-4 col-md-6 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80"
+                allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80" alt="video"
+        data-toggle="modal" data-target="#modal3"></a>
+
+  </div>
+  <!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,69 @@
+* {
+margin: 0;
+padding: 0;
+border: 0;
+line-height: 1.4em;
+vertical-align: baseline;
+text-decoration: none;
+outline: 0;
+background-color: black;
+}
+.navbar-custom {
+    background-color: black;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#name {
+    color: #f72b1c;
+    float: left;
+    padding-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+
+}
+#who {
+    color: white;
+    float: left;
+}
+#me-content {
+    color: white;
+    float: left;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24px;
+}
+
+
+
+#left_home {
+    background-color: ;
+    float; left;
+
+
+}
+.rounded {
+    height: 600px;
+    padding-top: 50px;
+}
+
+#right_home {
+
+
+}
+
+.stack-img {
+    padding-top: 25px;
+    height: 30%;
+}
+
+.footer {
+    clear: both;
+    position: relative;
+    margin-top: 0;
+    color: white;
+}
+

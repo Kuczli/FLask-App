@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% set active_page = "index" -%}
+
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div class="col-4 text-center" id="left_home">
+      <img class="rounded img-fluid" id="img_me" src="{{url_for('static', filename='img/me.jpg')}}" />
+    </div>
+    <div class="col-8" id="right_home">
+      <h1 id="name">I'm Daniel Motowilczuk.</h1>
+      <h2 id="who">Full-Stack Developer</h2>
+      <br>
+      <span id="me-content">I'm a Polish based web designer & front‑end & back-end developer focused on crafting clean & user‑friendly experiences,
+        I am passionate about building excellent software that improves the lives of those around me.</span>
+        <div class="col" style="float: left;">
+            <img class="img-fluid stack-img" src="{{url_for('static', filename='img/4.jpg')}}" />
+        </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

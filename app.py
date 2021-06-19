@@ -1,4 +1,4 @@
-from flask import Flask,render_template, url_for, redirect
+from flask import Flask,render_template, url_for, redirect, request
 from AzureDB import AzureDB
 from datetime import datetime
 from flask_dance.contrib.github import make_github_blueprint, github
@@ -11,8 +11,8 @@ os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '0' #zezwalamy na polaczenie w lokal
 #srodowisku bez https
 
 github_blueprint = make_github_blueprint(
-    client_id="5297f30e8a75357e7671", #tu wklek swoj wygenerowany id z github
-    client_secret="110ad2a978014592cc11ef2e7f22b3c1ce67d3bf",#tu wklej swoj
+    client_id="061455c87c668f8d2a92", #tu wklek swoj wygenerowany id z github
+    client_secret="2dd1762f1424a3f636edd7412185264dd2025f30",#tu wklej swoj
 #wygenerowany client secret z github
 )
 
@@ -45,11 +45,11 @@ def gallery():
 def contact():
     return render_template("contact.html")
 
-@app.route('/ksiega-gosci')
-def ksiegagosci():
+@app.route('/ksiega_gosci', methods=['POST'])
+def ksiega_gosci():
     with AzureDB() as a:
-        data = a.azureGetData()
-    return render_template("ksiegagosci.html", data = data)
+        a.azureAddData(request.form.get("nickname"), request.form.get("content"), request.form.get("date"))
+    return redirect('ksiega_gosci')
 
 
 
